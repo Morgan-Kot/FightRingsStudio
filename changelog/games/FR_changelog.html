@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight Rings - Changelog</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/changelog.css">
+    <script src="https://kit.fontawesome.com/3f1efd1059.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <ul class="nav-links">
+            <li><a href="../../index.html"><span class="icon"><i class="fa-solid fa-house" style="color: rgb(67, 168, 254);"></i></span><span class="text">Home</span></a></li>
+            <li><a href="../../info.html"><span class="icon"><i class="fa-solid fa-info" style="color: rgb(67, 168, 254);"></i></span><span class="text">Information</span></a></li>
+            <li><a href="../../updates.html"><span class="icon"><i class="fa-solid fa-newspaper" style="color: rgb(67, 168, 254);"></i></span><span class="text">News</span></a></li>
+            <li><a href="../../chat.html"><span class="icon"><i class="fa-solid fa-comment" style="color: rgb(67, 168, 254);"></i></span><span class="text">Chat</span></a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <div class="container" style="position: relative;">
+            
+            <a href="../../index.html" class="back-top-left-btn">
+                <i class="fa-solid fa-arrow-left"></i> Return Home
+            </a>
+
+            <header class="hero-section">
+                <h1 class="glitch-text">Fight Rings Changelog</h1>
+                <p class="tagline">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit molestias suscipit officia. Tempora, numquam cupiditate.</p>
+                
+                <div class="search-container">
+                    <input type="text" id="versionSearch" onkeyup="searchVersions()" placeholder="Search versions or updates...">
+                </div>
+            </header>
+
+            <section class="upcoming-news-box">
+                <div class="upcoming-header">
+                    <span class="badge badge-upcoming"><i class="fa-solid fa-hourglass-half"></i> Upcoming Release</span>
+                    <h2 class="upcoming-title clickable-version" onclick="openVersionInfoModal()">U1.00-0</h2>
+                </div>
+                <h3>First Public Version</h3>
+                <p class="upcoming-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quasi. Proin ac eros sed nisl porttitor dictum id non erat.</p>
+                
+                <div class="upcoming-teaser">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Consectetur adipiscing elit sed do</li>
+                    </ul>
+                </div>
+                
+                <div class="upcoming-actions">
+                    <a href="https://www.roblox.com/games/119498540556307/Fight-Rings" target="_blank" class="btn-upcoming-cta">
+                        Follow Progress <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </section>
+
+            <section class="changelog-update">
+                <div class="version-header">
+                    <h2 class="version-title clickable-version" onclick="openVersionInfoModal()">Z0.99-0</h2>
+                    <span class="badge badge-latest">Prototype</span>
+                </div>
+                <h3>Prototype</h3>
+                <p class="update-description">This version is the base game. The map, swords, user interface and many things where added in this release</p>
+                
+                <div class="update-content">
+                    <ul>
+                        <li><strong>Added:</strong> User interface</li>
+                        <li><strong>Added:</strong> Wooden and stone sword</li>
+                        <li><strong>Added:</strong> Map</li>
+                        <li><strong>Created:</strong> New project</li>
+                    </ul>
+                </div>
+
+                <div class="folder-toggle-container">
+                    <button class="folder-btn" onclick="toggleFolder('folder-v120')">
+                        <i class="fa-solid fa-folder"></i> View Builds and Hotfixes
+                    </button>
+                </div>
+
+                <div id="folder-v120" class="folder-content">
+                    <div class="sub-update">
+                        <h4 class="clickable-version" onclick="openVersionInfoModal()">Z0.13-0</h4>
+                        <ul>
+                            <li><strong>Replaced:</strong> Development map with a new and playable map</li>
+                        </ul>
+                    </div>
+                    <div class="sub-update">
+                        <h4 class="clickable-version" onclick="openVersionInfoModal()">Z0.12-0</h4>
+                        <ul>
+                            <li><strong>Added:</strong> Development map</li>
+                        </ul>
+                    </div>
+                    <div class="sub-update">
+                        <h4 class="clickable-version" onclick="openVersionInfoModal()">Z0.10-0</h4>
+                        <ul>
+                            <li><strong>Created:</strong> New project</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <div id="versionInfoModal" class="version-modal-overlay" onclick="closeVersionInfoModalWindow(event)">
+        <div class="version-modal-card">
+            <span class="version-modal-close-icon" onclick="closeVersionInfoModal()">&times;</span>
+            <h3>KoVersioning Format</h3>
+            
+            <div class="formula-block">
+                STAGE . MAJOR . MINOR MINIMAL - BUILD
+            </div>
+            
+            <hr class="modal-divider">
+            
+            <h4>Stage Reference Codes</h4>
+            <div class="stages-grid-layout">
+                <div><strong>A</strong> Alpha</div>
+                <div><strong>B</strong> Beta</div>
+                <div><strong>C</strong> Closed Beta</div>
+                <div><strong>D</strong> Active Development</div>
+                <div><strong>E</strong> Modified/Edited</div>
+                <div><strong>L</strong> Limited Edition</div>
+                <div><strong>M</strong> Modified/Edited</div>
+                <div><strong>O</strong> Open Beta</div>
+                <div><strong>P</strong> Pre-release</div>
+                <div><strong>Q</strong> QOL Update</div>
+                <div><strong>R</strong> Replaced</div>
+                <div><strong>T</strong> Testing</div>
+                <div><strong>U</strong> Upcoming</div>
+                <div><strong>V</strong> Standard Version</div>
+                <div><strong>Z</strong> Prototype</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openVersionInfoModal() {
+            document.getElementById('versionInfoModal').style.display = 'flex';
+        }
+
+        function closeVersionInfoModal() {
+            document.getElementById('versionInfoModal').style.display = 'none';
+        }
+
+        function closeVersionInfoModalWindow(event) {
+            if (event.target.id === 'versionInfoModal') {
+                closeVersionInfoModal();
+            }
+        }
+
+        function searchVersions() {
+            const input = document.getElementById('versionSearch');
+            const filter = input.value.toLowerCase();
+            const updates = document.getElementsByClassName('changelog-update');
+
+            for (let i = 0; i < updates.length; i++) {
+                const versionTitleElement = updates[i].getElementsByClassName('version-title')[0];
+                const updateNameElement = updates[i].getElementsByTagName('h3')[0];
+                let combinedText = "";
+                
+                if (versionTitleElement) {
+                    combinedText += versionTitleElement.textContent || versionTitleElement.innerText;
+                }
+                if (updateNameElement) {
+                    combinedText += " " + (updateNameElement.textContent || updateNameElement.innerText);
+                }
+
+                if (combinedText.toLowerCase().indexOf(filter) > -1) {
+                    updates[i].style.display = "";
+                } else {
+                    updates[i].style.display = "none";
+                }
+            }
+        }
+
+        function toggleFolder(folderId) {
+            const folder = document.getElementById(folderId);
+            const button = folder.previousElementSibling.querySelector('.folder-btn');
+            const icon = button.querySelector('i');
+
+            if (folder.style.display === "block") {
+                folder.style.display = "none";
+                icon.className = "fa-solid fa-folder";
+            } else {
+                folder.style.display = "block";
+                icon.className = "fa-solid fa-folder-open";
+            }
+        }
+    </script>
+
+</body>
+</html>
