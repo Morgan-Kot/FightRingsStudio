@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight Rings</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fightrings.css">
+    <script src="https://kit.fontawesome.com/3f1efd1059.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Expanding Sidebar -->
+    <nav class="sidebar">
+        <ul class="nav-links">
+            <li><a href="../index.html" class="active"><span class="icon"><i class="fa-solid fa-house" style="color: rgb(67, 168, 254);"></i></span><span class="text">Home</span></a></li>
+            <li><a href="../info.html"><span class="icon"><i class="fa-solid fa-info" style="color: rgb(67, 168, 254);"></i></span><span class="text">Information</span></a></li>
+            <li><a href="../updates.html"><span class="icon"><i class="fa-solid fa-newspaper" style="color: rgb(67, 168, 254);"></i></span><span class="text">News</span></a></li>
+            <li><a href="../chat.html"><span class="icon"><i class="fa-solid fa-comment" style="color: rgb(67, 168, 254);"></i></span><span class="text">Chat</span></a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <div class="container">
+            
+            <header class="hero-section">
+                <h1 class="glitch-text">Fight Rings</h1>
+                <p class="tagline">Description_placeholder:[Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, saepe blanditiis? Dolorum, quia.]</p>
+                <div class="cta-buttons">
+                    <a href="https://www.roblox.com/games/119498540556307/Fight-Rings" target="_blank" class="btn btn-primary">Play on roblox <i class="fa-solid fa-up-right-from-square" style="color: rgb(255, 255, 255);"></i></a>
+                    <a href="../index.html" class="btn btn-secondary">Back to homepage</a>
+                </div>
+            </header>
+
+            <section class="media-section">
+                <h2>Gameplay trailer</h2>
+                <div class="video-placeholder">
+                    <span class="play-icon">▶</span>
+                    <p>[Gameplay_trailer03]</p>
+                </div>
+            </section>
+
+            <section class="changelog-section" style="display: flex; justify-content: center;">
+                <a href="../changelog/games/fr_changelog.html" class="btn btn-secondary" style="width: 650px; text-align: center;">View changelog <i class="fa-solid fa-up-right-from-square" style="color: rgb(255, 255, 255);"></i></a>
+            </section>
+
+            <section class="about-section">
+                <h2>About the Game</h2>
+                <br>
+                <div class="about-box">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste error veritatis praesentium 
+                        est temporibus voluptatem, beatae libero adipisci quae rem vero exercitationem explicabo mollitia, laborum, quasi saepe 
+                        facilis consequuntur magni nobis sed aut? Hic iusto amet velit accusamus aperiam odio ipsum itaque eligendi voluptas possimus! 
+                        Dolor, impedit possimus. Dolorem, dolorum.
+                    </p>
+                </div>
+            </section>
+
+            <section class="toggle-section">
+                <button class="toggle-btn" onclick="toggleSwordsList()">Press to view swords</button>
+                
+                <div class="swords-container" id="swordsContainer">
+                    <div class="swords-grid">
+                        
+                        <div class="sword-box">
+                            <div class="sword-img-placeholder">IMAGE_HERE</div>
+                            <div class="sword-info">
+                                <h4>Grass Sword</h4>
+                                <p class="sword-rank rank-common">Common</p>
+                                <p class="sword-price">N/A</p>
+                            </div>
+                        </div>
+
+                        <div class="sword-box">
+                            <div class="sword-img-placeholder">IMAGE_HERE</div>
+                            <div class="sword-info">
+                                <h4>Wooden Sword</h4>
+                                <p class="sword-rank rank-rare">Rare</p>
+                                <p class="sword-price">N/A</p>
+                            </div>
+                        </div>
+
+                        <div class="sword-box">
+                            <div class="sword-img-placeholder">IMAGE_HERE</div>
+                            <div class="sword-info">
+                                <h4>Stone Sword</h4>
+                                <p class="sword-rank rank-legendary">Legendary</p>
+                                <p class="sword-price">N/A</p>
+                            </div>
+                        </div>
+
+                        <div class="sword-box">
+                            <div class="sword-img-placeholder">IMAGE_HERE</div>
+                            <div class="sword-info">
+                                <h4>Sword_4</h4>
+                                <p class="sword-rank rank-legendary">Legendary</p>
+                                <p class="sword-price">N/A</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script>
+        function toggleSwordsList() {
+            const container = document.getElementById('swordsContainer');
+            const button = document.querySelector('.toggle-btn');
+            
+            if (container.style.display === 'block') {
+                container.style.display = 'none';
+                button.textContent = "Press to view swords";
+            } else {
+                container.style.display = 'block';
+                button.textContent = "Press to hide swords";
+            }
+        }
+    </script>
+
+</body>
+</html>
